@@ -551,5 +551,54 @@
         <div class="footer-box3"></div>
       </div>
     </footer>
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button class="modal-close">&times;</button>
+        <h2 class="modal-title">
+          Leave your contacts and we will call you back
+        </h2>
+        <form class="modal-form">
+          <div class="form-group">
+            <label for="name">
+              Name
+              <input type="text" id="name" name="name" placeholder=" " />
+              <span class="form-icon">&#128100;</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="phone">
+              Phone
+              <input type="tel" id="phone" name="phone" placeholder=" " />
+              <span class="form-icon">&#9742;</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              Email
+              <input type="email" id="email" name="email" placeholder=" " />
+              <span class="form-icon">&#9993;</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="comment">
+              Comment
+              <textarea
+                id="comment"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="policy" name="policy" />
+            <label for="policy">
+              I accept the terms and conditions of the
+              <a href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="form-submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

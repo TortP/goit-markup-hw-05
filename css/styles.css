@@ -553,3 +553,135 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--navy-blue-modal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.modal {
+  position: relative;
+  background-color: var(--white);
+  width: 25.5rem;
+  border-radius: 4px;
+  padding: 32px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.02rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border: 1px solid #4d5ae5;
+}
+
+.form-group .form-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  color: #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 6rem;
+}
+
+.form-checkbox {
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-size: 0.75rem;
+  letter-spacing: 0.03rem;
+  line-height: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-checkbox a {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+.form-submit {
+  position: relative;
+  width: 10.5rem;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-submit:hover {
+  background: #357ab8;
+}
+
+label {
+  font-size: 0.75rem;
+  color: var(--LIGHT-SLATE, #8e8f99);
+  margin-bottom: 0.25rem;
+}
