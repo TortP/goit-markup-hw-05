@@ -529,7 +529,7 @@ img {
 
 .footer-box1,
 .footer-box2,
-.footer-box3 {
+.footer-last {
   flex: 1;
   padding: 20px;
   color: var(--white);
@@ -555,7 +555,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-.footer-box3 {
+.footer-last {
   display: flex;
   flex-direction: column;
 }
