@@ -564,7 +564,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: rgb(var(--cl-white));
+  color: rgb(var(--white));
 }
 
 .footer-form {
