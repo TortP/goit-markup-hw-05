@@ -484,7 +484,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container">
         <div class="footer-box1">
           <a href="/index.html" class="logo"
             >Web<span class="logo-footer">Studio</span></a
@@ -548,10 +548,27 @@
             </li>
           </ul>
         </div>
-        <div class="footer-box3"></div>
+        <div class="footer-box3">
+          <p class="footer-text-form">Subscribe</p>
+          <form class="footer-form" name="email_data">
+            <label class="footer-email"
+              ><input
+                class="footer-input-email"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+            /></label>
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="footer-button-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    
+
     <div class="modal-overlay">
       <div class="modal">
         <button class="modal-close-button" type="button">
